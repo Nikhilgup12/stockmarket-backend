@@ -1,0 +1,44 @@
+### Get all holdings
+GET http://localhost:5000/api/holdings
+Accept: application/json
+
+### Buy stocks
+POST http://localhost:5000/api/trade
+Content-Type: application/json
+
+{
+    "symbol": "AAPL",
+    "quantity": 10,
+    "type": "buy"
+}
+
+### 
+
+POST http://localhost:5000/api/trade
+Content-Type: application/json
+
+{
+    "symbol": "GOOGLE",
+    "quantity": 20,
+    "type": "buy"
+}
+
+### Sell stocks
+POST http://localhost:5000/api/trade
+Content-Type: application/json
+
+{
+    "symbol": "AAPL",
+    "quantity": 5,
+    "type": "sell"
+}
+
+### Sell more shares than available
+POST http://localhost:5000/api/trade
+Content-Type: application/json
+
+{
+    "symbol": "AAPL",
+    "quantity": 20,
+    "type": "sell"
+}
