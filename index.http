@@ -1,9 +1,9 @@
 ### Get all holdings
-GET http://localhost:5000/api/holdings
+GET https://stockmarket-backend-fqvv.onrender.com/api/holdings
 Accept: application/json
 
 ### Buy stocks
-POST http://localhost:5000/api/trade
+POST https://stockmarket-backend-fqvv.onrender.com/api/trade
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 
 ### 
 
-POST http://localhost:5000/api/trade
+POST https://stockmarket-backend-fqvv.onrender.com/api/trade
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 }
 
 ### Sell stocks
-POST http://localhost:5000/api/trade
+POST https://stockmarket-backend-fqvv.onrender.com/api/trade
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 
 ### Sell more shares than available
-POST http://localhost:5000/api/trade
+POST https://stockmarket-backend-fqvv.onrender.com/api/trade
 Content-Type: application/json
 
 {
